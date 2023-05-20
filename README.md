@@ -1,9 +1,5 @@
 # [Analysing visual content using HoloLens, Computer Vision APIs, Unity and the Mixed Reality Toolkit](https://davide.dev/analysing-visual-content-using-hololens-computer-vision-apis-unity-and-the-windows-mixed-reality-toolkit/)
 
-Reuse some code from:<br />
-https://github.com/JannikLassahn/hololens-photocapture<br />
-https://blogs.windows.com/buildingapps/2017/02/13/cognitive-services-apis-vision/#kGJJ5dKM9yWTOhjD.97<br />
-
 (This article was originally published @ https://davide.dev)
 
 In these days, I’m exploring the combination of HoloLens/Windows Mixed Reality and the capabilities offered by Cognitive Services to analyse and extract information from images captured via the device camera and processed using the Computer Vision APIs and the intelligent cloud.
@@ -178,8 +174,6 @@ I then moved to HoloLens and started creating the interface using Unity, the Mix
 <h1>Creating the Unity HoloLens experience</h1>
 First of all, I created a new Unity project using Unity 2017.2.1p4 and then added a new folder named <strong>Scenes</strong> and saved the active scene as <strong>CognitiveServicesVision Scene</strong>.
 
-I downloaded the corresponding version of the Mixed Reality Toolkit from the releases section of the GitHub project <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/releases" target="_blank" rel="noopener">https://github.com/Microsoft/MixedRealityToolkit-Unity/releases</a> and imported the toolkit package HoloToolkit-Unity-2017.2.1.1.unitypackage using the menu <em>Assets-&gt;Import Package-&gt;Custom package.</em>
-
 Then, I applied the <strong>Mixed Reality Project settings</strong> using the corresponding item in the toolkit menu:
 
 <img class="aligncenter size-full wp-image-8241" src="https://davide.dev/wp-content/uploads/2018/02/05-MRTK-Project-Settings.png" alt="" width="871" height="941" />
@@ -199,8 +193,6 @@ The <strong>CameraCaptureUI</strong> UWP API is not available in HoloLens, so I 
 First of all, I enabled the <strong>Experimental (.NET 4.6 Equivalent)</strong> Scripting Runtime version in the Unity player for using features like <strong>async/await. </strong>Then, I enabled the <strong>PicturesLibrary</strong> capability in the Publishing Settings to save the captured image to the device.
 
 <img class="aligncenter size-large wp-image-8244" src="https://davide.dev/wp-content/uploads/2018/02/08-Player-settings-1024x549.png" alt="" width="660" height="354" />
-
-Then, I created a <em>Scripts</em> folder and added a new <strong>PhotoManager.cs</strong> script taking as a starting point the implementation available in <a href="https://github.com/JannikLassahn/hololens-photocapture" target="_blank" rel="noopener">this</a> GitHub project.
 
 The script can be attached to a <strong>TextMesh</strong> component visualising the status:
 
