@@ -1,7 +1,5 @@
 # [Analysing visual content using HoloLens, Computer Vision APIs, Unity and the Mixed Reality Toolkit](https://davide.dev/analysing-visual-content-using-hololens-computer-vision-apis-unity-and-the-windows-mixed-reality-toolkit/)
 
-(This article was originally published @ https://davide.dev)
-
 In these days, I’m exploring the combination of HoloLens/Windows Mixed Reality and the capabilities offered by Cognitive Services to analyse and extract information from images captured via the device camera and processed using the Computer Vision APIs and the intelligent cloud.
 In this article, we’ll explore the steps I followed for creating a Unity application running on HoloLens and communicating with the Microsoft AI platform.
 <h1>Registering for Computer Vision APIs</h1>
@@ -385,4 +383,3 @@ I was then able to generate the final package using Unity specifying the startin
 
 <img class="aligncenter size-large wp-image-8253" src="https://davide.dev/wp-content/uploads/2018/02/16-Generating-the-package-1024x991.png" alt="" width="660" height="639" />And then I deployed the solution to the HoloLens device and started extracting and categorising visual data using HoloLens, Camera, Speech and the Cognitive Services Computer Vision APIs.
 <h1>Conclusions</h1>
-The combination of Mixed Reality and Cognitive Services opens a new world of experiences combining the capabilities of HoloLens and all the power of the intelligent cloud. In this article, I’ve analysed the Computer Vision APIs, but a similar approach could be applied to augment Windows Mixed Reality apps and enrich them with the AI platform <a href="https://www.microsoft.com/en-gb/ai" target="_blank" rel="noopener">https://www.microsoft.com/en-gb/ai</a>.
